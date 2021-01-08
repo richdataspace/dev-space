@@ -64,7 +64,7 @@ app.post('/projects', (request, response) => {
     console.log(owner)
     console.log(title)
 
-    return response.json(projects) // sempre exibe o projeto recém criado, e nao toda lista.
+    return response.json(project) // sempre exibe o projeto recém criado, e nao toda lista.
 });
 
 app.put('/projects/:id', validateProjectId, (request, response) => {
